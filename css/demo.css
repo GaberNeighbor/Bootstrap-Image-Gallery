@@ -12,11 +12,15 @@
 
 body {
     padding-top: 60px;
-    background: #222;
-    color: #fff;
+    background: #fff;
+    color: #333;
+    text-align: center;
 }
 h1 {
     font-family: "Lucida Grande", "Lucida Sans Unicode", Arial, sans-serif;
+    font-size: 3.8em;
+    padding-bottom: 20px;
+    margin-bottom: 0px;
 }
 a {
     color: orange;
@@ -28,4 +32,26 @@ a:hover {
 .modal {
 	overflow: auto;
 	color: #333;
+}
+
+.btn {
+	text-transform: uppercase;
+	letter-spacing: 0.1rem;
+	font-weight: light;
+}
+
+.btn, .btn-success {
+	background-color: #78a227;
+	border-color: #78a227;
+	-webkit-transition: background-color 0.2s;
+    transition: width background-color 0.2s;
+}
+
+.btn-sm {
+	padding: 7px 18px;
+	margin: 10px 0 0 0;
+}
+
+#links {
+	padding-top: 15px;
 }

@@ -43,21 +43,6 @@ $(function () {
         });
     });
 
-    $('#borderless-checkbox').on('change', function () {
-        var borderless = $(this).is(':checked');
-        $('#blueimp-gallery').data('useBootstrapModal', !borderless);
-        $('#blueimp-gallery').toggleClass('blueimp-gallery-controls', borderless);
-    });
-
-    $('#fullscreen-checkbox').on('change', function () {
-        $('#blueimp-gallery').data('fullScreen', $(this).is(':checked'));
-    });
-
-    $('#image-gallery-button').on('click', function (event) {
-        event.preventDefault();
-        blueimp.Gallery($('#links a'), $('#blueimp-gallery').data());
-    });
-
     $('#video-gallery-button').on('click', function (event) {
         event.preventDefault();
         blueimp.Gallery([
@@ -96,7 +81,7 @@ $(function () {
                 vimeo: '73686146',
                 poster: 'https://secure-a.vimeocdn.com/ts/448/835/448835699_960.jpg'
             }
-        ], $('#blueimp-gallery').data());
+        ]);
     });
 
 });
